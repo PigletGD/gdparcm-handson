@@ -4,6 +4,7 @@
 #include "TextureManager.h"
 #include "TextureDisplay.h"
 #include "FPSCounter.h"
+#include "IconListHandler.h"
 
 /// <summary>
 /// This demonstrates a running parallax background where after X seconds, a batch of assets will be streamed and loaded.
@@ -23,8 +24,10 @@ BaseRunner::BaseRunner() :
 	BGObject* bgObject = new BGObject("BGObject");
 	GameObjectManager::getInstance()->addObject(bgObject);
 
-	TextureDisplay* display = new TextureDisplay();
-	GameObjectManager::getInstance()->addObject(display);
+	//TextureDisplay* display = new TextureDisplay();
+	//GameObjectManager::getInstance()->addObject(display);
+
+	IconListHandler* iconListHandlerObj = new IconListHandler();
 
 	FPSCounter* fpsCounter = new FPSCounter();
 	GameObjectManager::getInstance()->addObject(fpsCounter);

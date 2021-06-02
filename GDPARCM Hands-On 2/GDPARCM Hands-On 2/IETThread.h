@@ -17,6 +17,5 @@ public:
 	static void sleep(int ms);
 
 protected:
-	const int BUFFER;
 	virtual void run() = 0;
 };

@@ -60,6 +60,18 @@
     <ClCompile Include="ThreadPool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SearcherThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InserterThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleterThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IconListHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AGameObject.h">
@@ -111,6 +123,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IFinishedTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SearcherThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InserterThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleterThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IconListHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
