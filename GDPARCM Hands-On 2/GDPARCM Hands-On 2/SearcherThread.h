@@ -5,10 +5,16 @@
 class SearcherThread : public IETThread
 {
 public:
-	SearcherThread(int*, Mutex*, Mutex*, BufferSemaphore*, RoomSemaphore*);
+	SearcherThread(IconListHandler*, Indicator*, int*, Mutex*, Mutex*, BufferSemaphore*, RoomSemaphore*, int rand);
 private:
 	void run() override;
 
+	int seed;
+
+	IconListHandler* ILH;
+
+	Indicator* indicator;
+	
 	int* numSearchers;
 
 	Mutex* searcherMEMutex;

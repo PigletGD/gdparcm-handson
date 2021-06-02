@@ -160,6 +160,7 @@
     <ClCompile Include="IconListHandler.cpp" />
     <ClCompile Include="IconObject.cpp" />
     <ClCompile Include="IETThread.cpp" />
+    <ClCompile Include="Indicator.cpp" />
     <ClCompile Include="InserterThread.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MathUtils.cpp" />
@@ -183,6 +184,7 @@
     <ClInclude Include="IETThread.h" />
     <ClInclude Include="IExecutionEvent.h" />
     <ClInclude Include="IFinishedTask.h" />
+    <ClInclude Include="Indicator.h" />
     <ClInclude Include="InserterThread.h" />
     <ClInclude Include="IWorkerAction.h" />
     <ClInclude Include="MathUtils.h" />

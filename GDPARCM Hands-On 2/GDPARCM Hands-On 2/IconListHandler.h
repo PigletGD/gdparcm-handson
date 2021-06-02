@@ -1,6 +1,6 @@
 #pragma once
 #include "AGameObject.h"
-#include "IconObject.h"
+#include "Indicator.h"
 
 class SearcherThread;
 class InserterThread;
@@ -22,8 +22,14 @@ public:
 	void processInput(sf::Event event);
 	void update(sf::Time deltaTime);
 
+	void updateIndicators(Indicator*, int);
+
+	std::vector<IconObject*>* getIconList();
+	std::vector<IconObject*>* getIconBank();
+
 private:
 	void spawnThreads();
+	void runThreads();
 	void spawnIconObjectsToDisplay();
 	void spawnIconObjectBank();
 	
@@ -34,17 +40,18 @@ private:
 	int searcherCount = 0;
 	int inserterCount = 0;
 
-	std::vector<IconObject*> searcherIndicators;
-	std::vector<IconObject*> inserterIndicators;
-	IconObject* deleterIndicator;
+	std::vector<Indicator*> searcherIndicators;
+	std::vector<Indicator*> inserterIndicators;
+	std::vector<Indicator*> deleterIndicators;
 
-	IconObject* iconBufferList[10];
+	std::vector<IconObject*> iconBufferList;
 	std::vector<IconObject*> iconObjectBank;
 
 	std::vector<SearcherThread*> searchers;
 	std::vector<InserterThread*> inserters;
-	DeleterThread* deleter;
+	std::vector<DeleterThread*> deleters;
 
+	Mutex syncMEMutex = Mutex(1);
 	Mutex searcherMEMutex = Mutex(1);
 	Mutex inserterMEMutex = Mutex(1);
 	Mutex deleterMEMutex = Mutex(1);

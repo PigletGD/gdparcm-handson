@@ -1,14 +1,17 @@
 #include "InserterThread.h"
 #include <iostream>
 
-InserterThread::InserterThread (int* _numInserters, Mutex* _inserterMEMutex, Mutex* _deleterMEMutex, BufferSemaphore* _inserterBufSem,
-	BufferSemaphore* _deleterBufSem, RoomSemaphore* _roomEmpty) : IETThread(), numInserters(_numInserters), inserterMEMutex(_inserterMEMutex),
-	deleterMEMutex(_deleterMEMutex), inserterBufSem(_inserterBufSem), deleterBufSem(_deleterBufSem), roomEmpty(_roomEmpty)
+InserterThread::InserterThread (IconListHandler* _ILH, Indicator* _indicator, int* _numInserters, Mutex* _inserterMEMutex, Mutex* _deleterMEMutex,
+	BufferSemaphore* _inserterBufSem, BufferSemaphore* _deleterBufSem, RoomSemaphore* _roomEmpty, int rand) : IETThread(), ILH(_ILH), indicator(_indicator),
+	numInserters(_numInserters), inserterMEMutex(_inserterMEMutex), deleterMEMutex(_deleterMEMutex), inserterBufSem(_inserterBufSem),
+	deleterBufSem(_deleterBufSem), roomEmpty(_roomEmpty), seed(rand)
 {
-
+	
 }
 
 void InserterThread::run() {
+	srand(seed);
+	
 	while (true) {
 		inserterBufSem->acquire();
 

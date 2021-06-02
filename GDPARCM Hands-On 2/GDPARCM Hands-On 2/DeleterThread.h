@@ -5,9 +5,16 @@
 class DeleterThread : public IETThread
 {
 public:
-	DeleterThread(Mutex*, BufferSemaphore*, BufferSemaphore*, RoomSemaphore*);
+	DeleterThread(IconListHandler*, Indicator*, Mutex*, BufferSemaphore*, BufferSemaphore*, RoomSemaphore*, int rand);
+
 private:
 	void run() override;
+
+	int seed;
+
+	IconListHandler* ILH;
+
+	Indicator* indicator;
 
 	Mutex* deleterMEMutex;
 	BufferSemaphore* inserterBufSem;

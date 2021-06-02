@@ -5,9 +5,15 @@
 class InserterThread : public IETThread
 {
 public:
-	InserterThread(int*, Mutex*, Mutex*, BufferSemaphore*, BufferSemaphore*, RoomSemaphore*);
+	InserterThread(IconListHandler*, Indicator*, int*, Mutex*, Mutex*, BufferSemaphore*, BufferSemaphore*, RoomSemaphore*, int);
 private:
 	void run() override;
+
+	int seed;
+
+	IconListHandler* ILH;
+
+	Indicator* indicator;
 
 	int* numInserters;
 

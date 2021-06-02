@@ -31,7 +31,7 @@ TextureManager::~TextureManager() {
 
 void TextureManager::loadFromAssetList()
 {
-	std::cout << "[TextureManager] Reading from asset list" << std::endl;
+	//std::cout << "[TextureManager] Reading from asset list" << std::endl;
 	std::ifstream stream("Media/assets.txt");
 	String path;
 
@@ -40,7 +40,7 @@ void TextureManager::loadFromAssetList()
 		std::vector<String> tokens = StringUtils::split(path, '/');
 		String assetName = StringUtils::split(tokens[tokens.size() - 1], '.')[0];
 		this->instantiateAsTexture(path, assetName, false);
-		std::cout << "[TextureManager] Loaded texture: " << assetName << std::endl;
+		//td::cout << "[TextureManager] Loaded texture: " << assetName << std::endl;
 	}
 }
 
