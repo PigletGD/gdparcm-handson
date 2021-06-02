@@ -9,7 +9,8 @@ void SearcherThread::run() {
 	while (true) {
 		deleterMEMutex->acquire();
 		(*numSearchers)++;
-		std::cout << "SEARCHERS: Entering Critical Section, Count: " << std::to_string(*numSearchers) << std::endl;
+		std::cout << "SEARCHERS: Entering Critical Section, Count: " 
+			<< std::to_string(*numSearchers) << std::endl;
 		if (*numSearchers == 1) {
 			roomEmpty->acquire();
 		}
@@ -23,7 +24,8 @@ void SearcherThread::run() {
 		if (*numSearchers == 0) {
 			roomEmpty->release();
 		}
-		std::cout << "SEARCHERS: Exiting Critical Section, Count: " << std::to_string(*numSearchers) << std::endl;
+		std::cout << "SEARCHERS: Exiting Critical Section, Count: " 
+			<< std::to_string(*numSearchers) << std::endl;
 		searcherMEMutex->release();
 
 		sleep(500);

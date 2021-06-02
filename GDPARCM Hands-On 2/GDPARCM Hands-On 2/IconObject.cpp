@@ -3,17 +3,19 @@
 #include "BaseRunner.h"
 #include "TextureManager.h"
 
-IconObject::IconObject(String name, int textureIndex): AGameObject(name)
+IconObject::IconObject(String name, int index = 0): AGameObject(name)
 {
-	this->textureIndex = textureIndex;
+	textureIndex = index;
+
+	//assign texture
+	this->sprite = new sf::Sprite();
+	sf::Texture* texture = TextureManager::TextureManager::getInstance()->getFromTextureMap(name, 0);
+	this->sprite->setTexture(*texture);
 }
 
 void IconObject::initialize()
 {
-	//assign texture
-	this->sprite = new sf::Sprite();
-	sf::Texture* texture = TextureManager::getInstance()->getStreamTextureFromList(this->textureIndex);
-	this->sprite->setTexture(*texture);
+	
 }
 
 void IconObject::processInput(sf::Event event)
@@ -22,4 +24,8 @@ void IconObject::processInput(sf::Event event)
 
 void IconObject::update(sf::Time deltaTime)
 {
+}
+
+void IconObject::setColor(sf::Color color) {
+	this->sprite->setColor(color);
 }

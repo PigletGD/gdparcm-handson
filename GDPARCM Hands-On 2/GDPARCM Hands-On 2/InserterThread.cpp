@@ -14,7 +14,8 @@ void InserterThread::run() {
 
 		deleterMEMutex->acquire();
 		(*numInserters)++;
-		std::cout << "INSERTERS: Entering Critical Section, Count: " << std::to_string(*numInserters) << std::endl;
+		std::cout << "INSERTERS: Entering Critical Section, Count: " 
+			<< std::to_string(*numInserters) << std::endl;
 		if (*numInserters == 1) {
 			roomEmpty->acquire();
 		}
@@ -30,7 +31,8 @@ void InserterThread::run() {
 			roomEmpty->release();
 		}
 		
-		std::cout << "INSERTERS: Exiting Critical Section, Count: " << std::to_string(*numInserters) << std::endl;
+		std::cout << "INSERTERS: Exiting Critical Section, Count: " 
+			<< std::to_string(*numInserters) << std::endl;
 		deleterBufSem->release();
 
 		sleep(500);
