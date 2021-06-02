@@ -5,10 +5,13 @@
 class InserterThread : public IETThread
 {
 public:
-	InserterThread(IconListHandler*, Indicator*, int*, Mutex*, Mutex*, BufferSemaphore*, BufferSemaphore*, RoomSemaphore*, int);
+	InserterThread(int, IconListHandler*, Indicator*, int*, Mutex*, Mutex*, BufferSemaphore*, BufferSemaphore*, RoomSemaphore*, int);
 private:
 	void run() override;
 
+	void insertIconToDisplay();
+
+	int ID;
 	int seed;
 
 	IconListHandler* ILH;

@@ -5,11 +5,14 @@
 class DeleterThread : public IETThread
 {
 public:
-	DeleterThread(IconListHandler*, Indicator*, Mutex*, BufferSemaphore*, BufferSemaphore*, RoomSemaphore*, int rand);
+	DeleterThread(int, IconListHandler*, Indicator*, Mutex*, BufferSemaphore*, BufferSemaphore*, RoomSemaphore*, int);
 
 private:
 	void run() override;
 
+	void removeIconFromDisplayList();
+
+	int ID;
 	int seed;
 
 	IconListHandler* ILH;

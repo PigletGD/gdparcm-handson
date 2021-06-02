@@ -7,6 +7,7 @@ class InserterThread;
 class DeleterThread;
 
 #include <semaphore>
+#include <fstream>
 
 const static int BUFFER_MAX = 10;
 
@@ -18,6 +19,7 @@ class IconListHandler : public AGameObject
 {
 public:
 	IconListHandler();
+	~IconListHandler();
 	void initialize();
 	void processInput(sf::Event event);
 	void update(sf::Time deltaTime);
@@ -27,7 +29,11 @@ public:
 	std::vector<IconObject*>* getIconList();
 	std::vector<IconObject*>* getIconBank();
 
+	void logPrintMessage(std::string msg);
+
 private:
+	std::ofstream fileOut;
+
 	void spawnThreads();
 	void runThreads();
 	void spawnIconObjectsToDisplay();

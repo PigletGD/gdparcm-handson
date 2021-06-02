@@ -8,6 +8,8 @@
 #include "DeleterThread.h"
 
 IconListHandler::IconListHandler() : AGameObject("Icon List Handler") {
+	fileOut.open("output.txt");
+
 	srand(time(NULL));
 
 	spawnThreads();
@@ -15,6 +17,10 @@ IconListHandler::IconListHandler() : AGameObject("Icon List Handler") {
 	spawnIconObjectBank();
 
 	runThreads();
+}
+
+IconListHandler::~IconListHandler() {
+	fileOut.close();
 }
 
 void IconListHandler::initialize() {
@@ -45,35 +51,29 @@ void IconListHandler::spawnThreads() {
 
 		GameObjectManager::getInstance()->addObject(searcherIndicators[i]);
 
-		std::cout << std::to_string(rand()) << std::endl;
-
-		searchers.push_back(new SearcherThread(this, searcherIndicators[i], &searcherCount,
+		searchers.push_back(new SearcherThread(i, this, searcherIndicators[i], &searcherCount,
 			&searcherMEMutex, &deleterMEMutex, &deleterBufSem, &roomEmpty, rand()));
 	}
 
 	for (int i = 0; i < numInserters; i++) {
 		inserterIndicators.push_back(new Indicator("indicator", 0));
-		inserterIndicators[i]->setPosition(300, 400);
+		inserterIndicators[i]->setPosition(-9999, -9999);
 		inserterIndicators[i]->setColor(sf::Color(246, 99, 12, 255));
 
 		GameObjectManager::getInstance()->addObject(inserterIndicators[i]);
 
-		std::cout << std::to_string(rand()) << std::endl;
-
-		inserters.push_back(new InserterThread(this, inserterIndicators[i], &inserterCount, &inserterMEMutex,
+		inserters.push_back(new InserterThread(i, this, inserterIndicators[i], &inserterCount, &inserterMEMutex,
 			&deleterMEMutex, &inserterBufSem, &deleterBufSem, &roomEmpty, rand()));
 	}
 
 	for (int i = 0; i < numDeleters; i++) {
 		deleterIndicators.push_back(new Indicator("indicator", 0));
-		deleterIndicators[i]->setPosition(100, 400);
+		deleterIndicators[i]->setPosition(-9999, -9999);
 		deleterIndicators[i]->setColor(sf::Color(231, 18, 36, 255));
-
-		std::cout << std::to_string(rand()) << std::endl;
 
 		GameObjectManager::getInstance()->addObject(deleterIndicators[i]);
 
-		deleters.push_back(new DeleterThread(this, deleterIndicators[i], &deleterMEMutex,
+		deleters.push_back(new DeleterThread(i, this, deleterIndicators[i], &deleterMEMutex,
 			&inserterBufSem, &deleterBufSem, &roomEmpty, rand()));
 	}
 }
@@ -110,7 +110,7 @@ void IconListHandler::spawnIconObjectsToDisplay() {
 void IconListHandler::spawnIconObjectBank() {
 	std::string number = "";
 
-	for (int i = 10; i < 30; i++) {
+	for (int i = 10; i < 20; i++) {
 		if (i < 10) number = "00" + std::to_string(i);
 		else if (i < 100) number = "0" + std::to_string(i);
 		else number = std::to_string(i);
@@ -157,4 +157,9 @@ void IconListHandler::updateIndicators(Indicator* indicator, int randIndex) {
 	}
 
 	syncMEMutex.release();
+}
+
+void IconListHandler::logPrintMessage(std::string msg) {
+	fileOut << msg << std::endl;
+	std::cout << msg << std::endl;
 }

@@ -20,13 +20,3 @@ Media/Textures/tile016.png
 Media/Textures/tile017.png
 Media/Textures/tile018.png
 Media/Textures/tile019.png
-Media/Textures/tile020.png
-Media/Textures/tile021.png
-Media/Textures/tile022.png
-Media/Textures/tile023.png
-Media/Textures/tile024.png
-Media/Textures/tile025.png
-Media/Textures/tile026.png
-Media/Textures/tile027.png
-Media/Textures/tile028.png
-Media/Textures/tile029.png

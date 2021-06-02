@@ -1,8 +1,8 @@
 #include "DeleterThread.h"
 #include <iostream>
 
-DeleterThread::DeleterThread(IconListHandler* _ILH, Indicator* _indicator, Mutex* _deleterMEMutex, BufferSemaphore* _inserterBufSem,
-	BufferSemaphore* _deleterBufSem, RoomSemaphore* _roomEmpty, int rand) : IETThread(), ILH(_ILH), indicator(_indicator),
+DeleterThread::DeleterThread(int _ID, IconListHandler* _ILH, Indicator* _indicator, Mutex* _deleterMEMutex, BufferSemaphore* _inserterBufSem,
+	BufferSemaphore* _deleterBufSem, RoomSemaphore* _roomEmpty, int rand) : IETThread(), ID(_ID), ILH(_ILH), indicator(_indicator),
 	deleterMEMutex(_deleterMEMutex), inserterBufSem(_inserterBufSem), deleterBufSem(_deleterBufSem), roomEmpty(_roomEmpty), seed(rand)
 {
 	
@@ -12,40 +12,18 @@ void DeleterThread::run() {
 	srand(seed);
 	
 	while (true) {
-		std::cout << "DELETER: GOING TO ASK TO EMPTY ROOM\n";
 		deleterBufSem->acquire();
-		std::cout << "DELETER: ACQUIRED PERMIT\n";
 		deleterMEMutex->acquire();
-		std::cout << "DELETER: ACQUIRED PERMIT TWO\n";
 		for (int i = 0; i < 2; i++) {
 			roomEmpty->acquire();
-			std::cout << "DELETER: ROOM EMPTY PERMIT ACQUIRED\n";
 		}
-		std::cout << "DELETER: ENTERED CRITICAL SECTION\n";
+		ILH->logPrintMessage("DELETER  " + std::to_string(ID) + ": Deleter Started");
 
-		/*DO SOMETHING*/
-		std::vector<IconObject*>* iconList = ILH->getIconList(); // returns IconObject**
-		std::vector<IconObject*>* iconBank = ILH->getIconBank();
+		/*CRITICAL SECTION*/
+		removeIconFromDisplayList();
+		/*CRITICAL SECTION*/
 
-		if (!iconList->empty()) {
-			int randIndex;
-			do {
-				randIndex = rand() % (*iconList).size();
-			} while ((*iconList)[randIndex] == nullptr);
-
-			(*iconList)[randIndex]->setPosition(-9999, -9999);
-			iconBank->push_back((*iconList)[randIndex]);
-			(*iconList)[randIndex] = nullptr;
-			ILH->updateIndicators(indicator, randIndex);
-		}
-		
-		//if ((*iconList)[randIndex] == nullptr)std::cout << "Its null: " << std::endl;
-
-		
-		//ILH->updateIndicators()
-
-		std::cout << "DELETER: LEAVING CRITICAL SECTION\n";
-
+		ILH->logPrintMessage("DELETER  " + std::to_string(ID) + ": Deleter Ended");
 		for (int i = 0; i < 2; i++) {
 			roomEmpty->release();
 		}
@@ -53,6 +31,28 @@ void DeleterThread::run() {
 
 		inserterBufSem->release();
 
-		sleep(1500);
+		sleep(200);
+		// TOTAL SLEEP DURATION: 300
 	}
+}
+
+void DeleterThread::removeIconFromDisplayList() {
+	std::vector<IconObject*>* iconList = ILH->getIconList();
+	std::vector<IconObject*>* iconBank = ILH->getIconBank();
+
+	int randIndex;
+	do {
+		randIndex = rand() % (*iconList).size();
+	} while ((*iconList)[randIndex] == nullptr);
+
+	IconObject* holder = (*iconList)[randIndex];
+	(*iconList)[randIndex]->setPosition(-9999, -9999);
+	iconBank->push_back((*iconList)[randIndex]);
+	(*iconList)[randIndex] = nullptr;
+	ILH->updateIndicators(indicator, randIndex);
+
+	ILH->logPrintMessage("DELETER  " + std::to_string(ID) + ": Deleted Icon \"" + holder->getName()
+		+ "\" from Display Index " + std::to_string(randIndex));
+
+	sleep(100);
 }

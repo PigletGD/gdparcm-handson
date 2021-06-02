@@ -115,7 +115,6 @@ void TextureManager::countStreamingAssets()
 	for (const auto& entry : std::filesystem::directory_iterator(STREAMING_PATH)) {
 		this->streamingAssetCount++;
 	}
-	std::cout << "[TextureManager] Number of streaming assets: " << this->streamingAssetCount << std::endl;
 }
 
 int TextureManager::getStreamingAssetsCount() const

@@ -1,0 +1,284 @@
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile002" from Display Index 2
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile010" to display index 2
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile003" from Display Index 3
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile011" to display index 3
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile011" from Display Index 3
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile012" to display index 3
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile012" from Display Index 3
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile013" to display index 3
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile010" from Display Index 2
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile014" to display index 2
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile007" from Display Index 7
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile015" to display index 7
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile004" from Display Index 4
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile016" to display index 4
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile001" from Display Index 1
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile017" to display index 1
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile006" from Display Index 6
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile018" to display index 6
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile008" from Display Index 8
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile019" to display index 8
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile019" from Display Index 8
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile002" to display index 8
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile000" from Display Index 0
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile003" to display index 0
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile016" from Display Index 4
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile011" to display index 4
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile009" from Display Index 9
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile012" to display index 9
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile003" from Display Index 0
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile010" to display index 0
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile013" from Display Index 3
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile007" to display index 3
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile007" from Display Index 3
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile004" to display index 3
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile018" from Display Index 6
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile001" to display index 6
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile010" from Display Index 0
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile006" to display index 0
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile012" from Display Index 9
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile008" to display index 9
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile001" from Display Index 6
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile019" to display index 6
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile015" from Display Index 7
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile000" to display index 7
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile011" from Display Index 4
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile016" to display index 4
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile017" from Display Index 1
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile009" to display index 1
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile002" from Display Index 8
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile003" to display index 8
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile004" from Display Index 3
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile013" to display index 3
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile006" from Display Index 0
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile007" to display index 0
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile013" from Display Index 3
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile018" to display index 3
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile000" from Display Index 7
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile010" to display index 7
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile005" from Display Index 5
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile012" to display index 5
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile010" from Display Index 7
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile001" to display index 7
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile003" from Display Index 8
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile015" to display index 8
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile014" from Display Index 2
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile011" to display index 2
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile019" from Display Index 6
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile017" to display index 6
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile011" from Display Index 2
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile002" to display index 2
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile002" from Display Index 2
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile004" to display index 2
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile018" from Display Index 3
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile006" to display index 3
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile001" from Display Index 7
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile013" to display index 7
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile007" from Display Index 0
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile000" to display index 0
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile000" from Display Index 0
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile005" to display index 0
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile017" from Display Index 6
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile010" to display index 6
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile005" from Display Index 0
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile003" to display index 0
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile015" from Display Index 8
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile014" to display index 8
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile009" from Display Index 1
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile019" to display index 1
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile003" from Display Index 0
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile011" to display index 0
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile014" from Display Index 8
+DELETER  0: Deleter Ended
+INSERTER 0: Inserter Started, Inserter Count: 1
+INSERTER 0: Inserted Icon "tile002" to display index 8
+INSERTER 0: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile002" from Display Index 8
+DELETER  0: Deleter Ended
+INSERTER 1: Inserter Started, Inserter Count: 1
+INSERTER 1: Inserted Icon "tile018" to display index 8
+INSERTER 1: Inserter Finished, Inserter Count: 0
+DELETER  0: Deleter Started
+DELETER  0: Deleted Icon "tile004" from Display Index 2

@@ -16,16 +16,12 @@ BaseRunner* BaseRunner::sharedInstance = NULL;
 BaseRunner::BaseRunner() :
 	window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "HO: Entity Component", sf::Style::Close) {	
 	sharedInstance = this;
-	
 	//load initial textures
 	TextureManager::getInstance()->loadFromAssetList();
 
 	//load objects
 	BGObject* bgObject = new BGObject("BGObject");
 	GameObjectManager::getInstance()->addObject(bgObject);
-
-	//TextureDisplay* display = new TextureDisplay();
-	//GameObjectManager::getInstance()->addObject(display);
 
 	IconListHandler* iconListHandlerObj = new IconListHandler();
 
