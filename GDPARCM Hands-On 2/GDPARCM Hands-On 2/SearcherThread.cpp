@@ -31,8 +31,8 @@ void SearcherThread::run() {
 		}
 		searcherMEMutex->release();
 
-		sleep(50);
-		// TOTAL SLEEP DURATION: 50 + (50 * Number of Elements Moved)
+		sleep(100);
+		// TOTAL SLEEP DURATION: 100 + (25 * Number of Elements Moved)
 	}
 }
 
@@ -51,7 +51,7 @@ void SearcherThread::searchIconList() {
 			currentIndex = 0;
 
 		ILH->updateIndicators(indicator, currentIndex);
-		sleep(50);
+		sleep(25);
 	} while (currentIndex != randIndex);
 
 	ILH->updateIndicators(indicator, randIndex);
